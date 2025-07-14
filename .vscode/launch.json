@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CloudGatewayApplication<com.interview-cloud-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.gateway.CloudGatewayApplication",
+            "projectName": "com.interview-cloud-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceRegistryApplication<com.interview-service-registry>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.ServiceRegistryApplication",
+            "projectName": "com.interview-service-registry",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderSeriveApplication<order-serive>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.order_serive.OrderSeriveApplication",
+            "projectName": "order-serive",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PaymentSeriveApplication<payment-serive>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.payment.PaymentSeriveApplication",
+            "projectName": "payment-serive",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
