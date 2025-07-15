@@ -1,22 +1,26 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: order-service
-          uri: lb://ORDER-SERVICE       
-          predicates:
-            - Path=/order/**
-          filters:
-            - RewritePath=/order/(?<remaining>.*), /${remaining}
-        - id: payment-service
-          uri: lb://PAYMENT-SERVICE
-          predicates:
-            - Path=/payment/**
-          filters:
-            - StripPrefix=1
+# spring:
+#   cloud:
+#     gateway:
+#       routes:
+#         - id: order-service
+#           uri: lb://ORDER-SERVICE       
+#           predicates:
+#             - Path=/order/**
+#           filters:
+#             - RewritePath=/order/(?<remaining>.*), /${remaining}
+#         - id: payment-service
+#           uri: lb://PAYMENT-SERVICE
+#           predicates:
+#             - Path=/payment/**
+#           filters:
+#             - StripPrefix=1
+#     discovery:
+#       locator:
+#         enabled: true
+#         lower-case-service-id: true
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: gateway,refresh,routes
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: gateway,refresh,routes
