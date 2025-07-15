@@ -1,0 +1,51 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "OrderSeriveApplication",
+            "request": "launch",
+            "mainClass": "com.interview.order_serive.OrderSeriveApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CloudGatewayApplication<com.interview-cloud-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.gateway.CloudGatewayApplication",
+            "projectName": "com.interview-cloud-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceRegistryApplication<com.interview-service-registry>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.ServiceRegistryApplication",
+            "projectName": "com.interview-service-registry",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderSeriveApplication<com.interview.os-order-serive>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.order_serive.OrderSeriveApplication",
+            "projectName": "com.interview.os-order-serive",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63656 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=com.interview.os-order-serive"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PaymentSeriveApplication<com.interview.ps-payment-serive>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.interview.payment.PaymentSeriveApplication",
+            "projectName": "com.interview.ps-payment-serive",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
